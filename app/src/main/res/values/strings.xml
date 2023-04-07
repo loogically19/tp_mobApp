@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">My Application</string>
+
+    <string name="email_hint">Email</string>
+    <string name="already_have_an_account">Already Have An Account</string>
+    <string name="get_started">Get Started</string>
+    <string name="signup">SignUp</string>
+    <string name="hfamily_name">Family Name</string>
+    <string name="hfirst_name">First Name</string>
+    <string name="hemail">Email</string>
+    <string name="hpassword">Password</string>
+    <string name="hage">Age</string>
+    <string name="haddress">Address</string>
+    <string name="hsign_up">Sign Up</string>
+</resources>

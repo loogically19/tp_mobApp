@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:background="@drawable/ic_launcher_background"
+    tools:context=".WelcomeActivity">
+
+    <Button
+        android:id="@+id/already_have_account_button"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_alignBottom="@id/get_started_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-74dp"
+        android:background="@drawable/button_shape"
+        android:text="Already Have An Account"
+        android:textColor="#100D0D"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/get_started_button"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_alignBottom="@id/imageView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-115dp"
+        android:background="@drawable/button_shape"
+        android:backgroundTint="@color/white"
+        android:text="Get Started"
+        android:textColor="#100D0D"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="32dp"
+        app:srcCompat="@drawable/logo_intro"
+        tools:layout_marginStart="32dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="111dp"
+        android:layout_marginTop="-164dp"
+        android:layout_marginEnd="94dp"
+        android:text="Welcome"
+        android:textColor="#ffffff"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

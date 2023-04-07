@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_launcher_background">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="95dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="95dp"
+            android:layout_marginBottom="595dp"
+            android:contentDescription="just logo for signup screen"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logo_sign_up"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/family_name"
+            android:layout_width="320dp"
+            android:layout_height="59dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/edit_text"
+            android:hapticFeedbackEnabled="true"
+            android:hint="@string/hfamily_name"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/first_name"
+            app:layout_goneMarginTop="20dp"
+            tools:ignore="MissingConstraints,DuplicateClickableBoundsCheck" />
+
+        <EditText
+            android:id="@+id/first_name"
+            android:layout_width="320dp"
+            android:layout_height="59dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/edit_text"
+            android:hapticFeedbackEnabled="true"
+            android:hint="@string/hfirst_name"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            app:layout_goneMarginTop="20dp"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="320dp"
+            android:layout_height="59dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_text"
+            android:hapticFeedbackEnabled="true"
+            android:hint="@string/hemail"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/address"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="320dp"
+            android:layout_height="59dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/edit_text"
+            android:hint="@string/hpassword"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/email"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/age"
+            android:layout_width="320dp"
+            android:layout_height="59dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/edit_text"
+            android:hint="@string/hage"
+            android:inputType="number"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/family_name"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="320dp"
+            android:layout_height="59dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/edit_text"
+            android:hint="@string/haddress"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/age"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/signup_button"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/button_shape"
+            android:insetTop="6dp"
+            android:text="@string/hsign_up"
+            android:textColor="#0B0A0A"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/password"
+            tools:ignore="MissingConstraints" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
